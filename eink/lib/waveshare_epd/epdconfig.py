@@ -70,6 +70,7 @@ class RaspberryPi:
 
     def module_init(self):
         try:
+            logger.debug("Initializing SPI and powering up module...")
             # Power on the module
             self.pwr.write(True)
             
