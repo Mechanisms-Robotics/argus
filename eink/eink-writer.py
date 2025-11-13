@@ -8,7 +8,7 @@ if os.path.exists(libdir):
     sys.path.append(libdir)
 
 import logging
-from waveshare_epd import epd2in13b_V4
+import epd2in13b_V4
 import time
 from PIL import Image,ImageDraw,ImageFont
 import traceback
@@ -34,5 +34,6 @@ drawry = ImageDraw.Draw(HRYimage)
 
 drawblack.text((10, 0), 'Team 8736', font = font18, fill = 0)
 drawry.text((10, 20), 'The Mechanisms', font = font24, fill = 0)
+drawblack.text((10, 50), 'A really long logline.', font = font18, fill = 0)
 
 epd.display(epd.getbuffer(HBlackimage), epd.getbuffer(HRYimage))
