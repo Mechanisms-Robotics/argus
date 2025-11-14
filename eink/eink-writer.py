@@ -11,7 +11,6 @@ import logging
 import epd2in13b_V4
 import time
 from PIL import Image,ImageDraw,ImageFont
-import traceback
 
 logging.basicConfig(level=logging.DEBUG)
 
